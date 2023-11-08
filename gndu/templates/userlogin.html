@@ -1,0 +1,54 @@
+<head>
+    <title></title>
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid " style="background-image: url(u:/gnduimage.jpg); background-size: cover;">
+        <div class="container  text-light p-5" >
+            
+            <div class="row">
+                <div class="col-2">
+                </div>
+                <div class="col-8 p-5 bg-dark bg-opacity-50 border shadow">
+                    <h3 class=" mb-5 text-center fw-bold">User Login</h3>
+                    <form method="post">
+                        {% csrf_token %}
+                        <label class="fw-bold">Email Address</label>
+    
+                        <input type="email" class="form-control mb-3"  placeholder="enter a valid email" name="email"required>
+                        <label class="fw-bold">Password</label>
+                        <input type="password" placeholder="enter password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="UpperCase, LowerCase and Number" name="pass" id="password" class="form-control">
+                        
+                     <div class="pt-4 row">
+                         <div class="col-6">
+                             <input type="checkbox">
+                             <label  class="text-decoration-none text-strat">Remember me</label>
+
+                         </div>
+                         <div class="col-6 text-end">
+                             <a href="" class="text-decoration-none text-end ms-auto">Forgot password?
+                             </a>
+
+                         </div>
+
+                     </div>
+    
+                        
+                        <div class=" mt-3">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                        
+                    </form>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</body>

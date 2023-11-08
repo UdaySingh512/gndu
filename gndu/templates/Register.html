@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title></title>
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid " style="background-image: url(u:/gnduimage.jpg); background-size: cover;">
+        <div class="container  text-light p-5" >
+            
+            <div class="row">
+                <div class="col-2">
+                </div>
+                <div class="col-8 p-5 bg-dark bg-opacity-50 border shadow">
+                    <h3 class=" mb-5 text-center fw-bold">Register</h3>
+                    <form action="" method="post">
+                         {% csrf_token %}
+                        <label for="" class="fw-bold" ><i ></i>Your Name</label>
+                        <input type="text" class="form-control mb-4" placeholder="enter your name" name='username'>
+                        <label class="fw-bold"><i></i>Email Address</label>
+    
+                        <input type="email" class="form-control mb-3"  placeholder="enter a valid email" name="email"required>
+                        <label class="fw-bold"><i ></i>Password</label>
+                        <input type="password" placeholder="enter password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="UpperCase, LowerCase and Number" name="password1" id="" class="form-control mb-3">
+                        <label class="fw-bold"><i ></i>Confirm password</label>
+                        <input type="password" placeholder="Re-enter password" class="form-control mb-3" name='password2'>
+                        
+                        <input type="submit" class="btn btn-primary mb-3" name="" id="">
+                      
+        
+                    
+                    </form>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
